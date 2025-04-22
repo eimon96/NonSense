@@ -8,4 +8,8 @@ Control your mouse using **PSVR2 Sense Controllers** on Windows with [Node.js](h
 
 Tested on Win11 with Node v22.14.0 and Bluetooth 
 
-@author eimon xD
+[Demo](https://www.youtube.com/watch?v=lJtWzqBR0-c)
+
+Feel free to modify the code to your convenience. "Play Has No Limits" kisses Sony 😇
+
+@author eimon ^^
