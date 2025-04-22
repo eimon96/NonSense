@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "node-hid": "^3.1.2"
+    "node-hid": "^3.1.2",
+    "robotjs": "^0.6.0"
   }
 }
