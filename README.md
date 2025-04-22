@@ -1,8 +1,11 @@
-# 🕹️ NonSense — Sense Controllers as Mouse
+# 🎮 NonSense — Sense Controller(s) as Mouse
 
-Control your mouse using **PS VR2 Sense Controllers** on Windows with Node.js and node-hid.
-Move the cursor with the analog stick, click with buttons — 'cause' why not?
+Control your mouse using **PS VR2 Sense Controllers** on Windows with [Node.js](https://nodejs.org/en), [node-hid](https://github.com/node-hid/node-hid) and [robotjs](https://github.com/octalmage/robotjs).
 
-- Analog stick = mouse movement
+- Analog Stick = Mouse Movement
 - Cross / Square = **Left click**
 - L2 / R2 = **Right click**
+
+Tested on Win11 with Node v22.14.0 and Bluetooth 
+
+WIP
