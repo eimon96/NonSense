@@ -44,6 +44,7 @@ export const readRawInput = (device) => {
 
   setInterval(() => {
     if (lastData) {
+      // moveMouseWithGyro(lastData);
       moveMouseWithStick(lastData);
     }
   }, interval);
@@ -77,5 +78,22 @@ export const moveMouseWithStick = (data) => {
   if (Math.abs(xInput) > deadzone || Math.abs(yInput) > deadzone) {
     const { x, y } = robot.getMousePos();
     robot.moveMouse(x + xInput * speed, y + yInput * speed);
+  }
+};
+
+export const normalizeGyro = (low, high) => {
+  let value = (high << 8) | low;
+  return value > 0x7fff ? value - 0x10000 : value;
+};
+
+export const moveMouseWithGyro = (data) => {
+  const gyrox = normalizeGyro(data[17], data[18]);
+  const gyroy = normalizeGyro(data[21], data[22]);
+  const deadzone = 70;
+  const speed = 0.08;
+
+  if (Math.abs(gyrox) > deadzone || Math.abs(gyroy) > deadzone) {
+    let { x, y } = robot.getMousePos();
+    robot.moveMouse(x - gyroy * speed, y - gyrox * speed);
   }
 };
