@@ -1,6 +1,7 @@
 # 🎮 NonSense — Sense Controller(s) as Mouse
 
-Control your mouse using **PSVR2 Sense Controllers** using [Node.js](https://nodejs.org/en), [node-hid](https://github.com/node-hid/node-hid) and [robotjs](https://github.com/octalmage/robotjs).
+Control your mouse using **PSVR2 Sense Controllers** using [Node.js](https://nodejs.org/en), [node-hid](https://github.com/node-hid/node-hid) and [robotjs](https://github.com/octalmage/robotjs).  
+Read HID input and convert it to mouse output. 
 
 - Analog Stick = Cursor Movement
 - Cross / Square = **Left click**
